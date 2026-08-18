@@ -1,0 +1,28 @@
+[project]
+name = "curriculum-vitae"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Mark Sverdlov", email = "marksve039@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "langchain>=1.3.14",
+    "langchain-openai>=1.4.3",
+    "pydantic>=2.13.4",
+    "structlog>=26.1.0",
+    "typer>=0.27.1",
+]
+
+[project.scripts]
+curriculum-vitae = "curriculum_vitae:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "ruff>=0.16.2",
+]

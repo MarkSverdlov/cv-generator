@@ -1,0 +1,68 @@
+{
+    "summary": "Data scientist with experience in applied analytics, statistical modeling, and budget forecasting within governmental environments. Skilled in Python, SQL, and data visualization, with hands-on experience developing machine learning models, analyzing large-scale financial datasets, and translating complex quantitative insights into actionable recommendations for senior management. Experienced in leveraging modern AI tools to enhance analytical workflows and productivity.",
+
+    "education": [
+        {
+        "start_year": "2023",
+        "end_year": "2026",
+        "description": "M.Sc. Mathematics at \\textbf{Bar-Ilan University}"
+        },
+        {
+            "start_year": "2015",
+            "end_year": "2019",
+            "description": "B.Sc. Mathematics at \\textbf{The Technion -- Israel Institute of Technology} (Cum Laude)"
+        }
+    ],
+    "experience": [
+        {
+            "title": "Junior Data Scientist, Budget Department, Israeli Ministry of Defense",
+            "timeframe": "Dec 2024 -- Dec 2025",
+            "description": [
+                "Was responsible for providing statistical analysis and decision support to management",
+                "Extracted and processed complex financial datasets using SQL from large-scale institutional databases",
+                "Conducted statistical and exploratory data analysis to identify spending trends and anomalies",
+                "Designed, implemented, and presented predictive models for budget forecasting of approximately ILS 120 billion",
+                "Built yearly expenditure forecasting models to support strategic planning"
+            ]
+        },
+        {
+            "title": "Budget Officer, Personnel Directorate, Israel Defense Forces",
+            "timeframe": "Apr 2019 -- Apr 2024",
+            "description": [
+                "Was responsible for administering a budget of approximately ILS 150 million and coordinating with internal stakeholders and senior management",
+                "Oversaw operational budgets for a medium-sized IDF unit, ensuring efficient allocation of resources",
+                "Maintained relations with high-profile stakeholders",
+                "Identified significiant organzational workflow problems and coordinated solution with stakeholders efficently and rapidly to troubleshoot them organization-wide",
+                "Coordinated with internal and external stakeholders to resolve complex procurement-related issues and ensure operational continuity",
+                "Specified, planned and developed semi-automated reports and dashboards for management decision-making",
+                "Supported procurement decisions and validated budget requests for core operational units",
+                "Led and supervised a small team of soldiers in administrative and financial tasks",
+                "Co-led the development and deployment of an IDF-wide procurement subsystem to enhance financial tracking and transparency, coordinating and resolving issues among stakeholders, technical teams, subject-matter experts, management, customers, and suppliers",
+                "Designed and implemented standardized workflows for expense tracking and reporting",
+                "Received the IDF Commanding Officer Excellence Award (\\texthebrew{הצטיינות אלוף}), 2021"
+            ]
+        }
+    ],
+    "skills": [
+        {
+            "name": "Machine Learning",
+            "description": "Regression models, time-series forecasting, classical ML methods, Deep Learning"
+        },
+        {
+            "name": "Agentic Coding Tools",
+            "description": "Extensive experience using AI-assisted development tools such as Claude Code for code generation, refactoring, and rapid prototyping"
+        },
+        {
+            "name": "Python",
+            "description": "Data analysis (pandas, numpy), machine learning (scikit-learn, pytorch, statsmodels), visualization (matplotlib, plotly)"  
+        },
+        {
+            "name": "Git",
+            "description": "Version control, collaborative development, GitHub workflows" 
+        },
+        {
+            "name": "R",
+            "description": "Statistical analysis, data visualization, exploratory analysis" 
+        }
+    ]
+}
