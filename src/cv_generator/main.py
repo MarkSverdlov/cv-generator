@@ -4,9 +4,9 @@ import sys
 
 import typer
 
-from cv_gen import CV
-from modify import modify
-from role_fit import suggest_fit, suggest_modification
+from .cv_gen import CV
+from .modify import modify
+from .role_fit import suggest_fit, suggest_modification
 
 
 def detect_language(text: str) -> str:

@@ -1,8 +1,8 @@
 import structlog
 from langchain_core.prompts import ChatPromptTemplate
 
-from llm import llm
-from modify import Modification
+from .llm import llm
+from .modify import Modification
 
 logger = structlog.get_logger()
 

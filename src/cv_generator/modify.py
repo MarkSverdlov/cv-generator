@@ -1,6 +1,6 @@
 from pydantic import BaseModel
 
-from cv_gen import CV, Skill
+from .cv_gen import CV, Skill
 
 
 class Modification(BaseModel):

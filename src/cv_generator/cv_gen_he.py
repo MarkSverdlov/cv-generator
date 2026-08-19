@@ -3,7 +3,7 @@ import pathlib
 import typer
 from pydantic import BaseModel, ValidationError
 
-from premble_text_he import premble
+from .premble_text_he import premble
 
 # SUMMARY SECTION
 
