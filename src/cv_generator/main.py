@@ -8,6 +8,8 @@ from .cv_gen import CV
 from .modify import modify
 from .role_fit import suggest_fit, suggest_modification
 
+app = typer.Typer()
+
 
 def detect_language(text: str) -> str:
     hebrew = sum("\u0590" <= c <= "\u05ff" for c in text)
@@ -21,7 +23,8 @@ def detect_language(text: str) -> str:
     return "he" if hebrew / total > 0.3 else "en"
 
 
-def main(role_path: pathlib.Path, role_name: str | None = None) -> None:
+@app.command()
+def gen_and_write_cv(role_path: pathlib.Path, role_name: str | None = None) -> None:
     if role_name is None:
         role_name = role_path.stem
     role_cv_path = pathlib.Path(f"~/curriculum-vitae/{role_name}").expanduser()
@@ -34,11 +37,11 @@ def main(role_path: pathlib.Path, role_name: str | None = None) -> None:
         role_ad = file.read()
     language = detect_language(role_ad)
     if language == "he":
-        from cv_gen_he import generate_cv
+        from .cv_gen_he import generate_cv
 
         cv_path = pathlib.Path("~/curriculum-vitae/cv-he.json").expanduser()
     else:
-        from cv_gen import generate_cv
+        from .cv_gen import generate_cv
 
         cv_path = pathlib.Path("~/curriculum-vitae/cv.json").expanduser()
     with open(cv_path) as file:
@@ -57,5 +60,9 @@ def main(role_path: pathlib.Path, role_name: str | None = None) -> None:
         file.write(new_cv_txt)
 
 
+def main():
+    app()
+
+
 if __name__ == "__main__":
-    typer.run(main)
+    main()

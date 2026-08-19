@@ -1,5 +1,5 @@
 [project]
-name = "cv-generator"
+name = "cv_generator"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
@@ -16,7 +16,7 @@ dependencies = [
 ]
 
 [project.scripts]
-gen-cv = "cv-generator:main"
+gen-cv = "cv_generator.main:main"
 
 [build-system]
 requires = ["uv_build>=0.12.5,<0.13.0"]
